@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock  %}
+
+{% block body %}
+<div class="container">
+    <h3>Result</h3>
+    <div class="card-body">
+        <h5 class="card-title">Score: {{score}}</h5>
+        <p class="card-text">Percentage: {{percent}}%</p>
+        <p class="card-text">Correct answers: {{correct}}</p>
+        <p class="card-text">Incorrect answers: {{wrong}}</p>
+        <p class="card-text">Total questions: {{total}}</p>
+        <h5>All the best for next quiz!</h5>
+    </div>
+</div>
+{% endblock %}

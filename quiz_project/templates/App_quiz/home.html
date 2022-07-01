@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}Home{%endblock%}
+{% block body %}
+<div class="container my-2">
+    <img src="{%static 'images/quiz_pic.png'%}" class="rounded mx-auto d-block" alt="My image" width='500px'>
+    <br>
+    <div class='text-center'>
+        <a href="{%url 'app_quiz:index'%}"><button class='btn btn-info'>Start Quiz</button></a>
+    </div>
+    
+</div>
+
+{% endblock  %}
